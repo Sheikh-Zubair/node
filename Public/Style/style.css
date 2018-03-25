@@ -1,0 +1,73 @@
+body {
+    background-image: url("../Images/health.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+ }
+main,
+header {
+    width: 960px;
+    margin: 0 auto;
+    padding: 1em 50px;
+    border: 0.01em solid #333;
+}
+header {
+    padding:0;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    width: auto;
+    border: none;
+}
+aside#signUp {
+    text-align: right;
+    font-size: 1rem;
+    margin: 0 auto;
+    padding-right: 6em;
+    border:0;
+    height: 1em; 
+}
+p {
+    text-align: justify;
+    line-height: 1.5;
+    width: 60%;
+    margin: 0;
+    margin-bottom: 1em;
+}
+/*
+div.sidePreview {
+    padding-left: 70%;
+    position: 1em;
+}*/
+div#NavigationPane {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f0;
+}
+div#NavigationPane button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+a.nav {
+    color: #333;
+    text-decoration: none;
+}
+div#NavigationPane button:hover {
+    background-color: #ddd;
+}
+div#NavigationPane button.active {
+    background-color: #ccc;
+}
+div.forms {
+    width: 20%;
+    padding: 1em 35%;
+}
+fieldset.field {
+    background: white;
+}
