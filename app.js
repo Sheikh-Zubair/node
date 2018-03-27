@@ -35,7 +35,7 @@ app.use(bodyparser.urlencoded({ extended: false }));
     res.render('index');
 });*/
 app.get('/', (req, res)=> {
-    res.render('form');
+    res.render('form.ejs');
 });
 //post request
 app.post('/users/add', (req, res)=> {
