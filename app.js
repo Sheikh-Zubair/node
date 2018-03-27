@@ -34,6 +34,9 @@ app.use(express.static(path.join(__dirname, 'Public')));
 app.get('/', (req, res) => {
     res.render('index');
 });
+app.get('/signin', (req, res)=> {
+    res.render('form');
+});
 //post request
 app.post('/users/add', (req, res)=> {
      let newUser = {
