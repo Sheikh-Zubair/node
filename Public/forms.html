@@ -12,48 +12,28 @@
 <body class="Forms">
     <div class="forms">
         <h1>Form</h1>
-        <form>
+        <form method='POST' action='/users/add'>
             <fieldset class="field">
                 <legend>Profile info</legend>
                 <hr>
                 <label for="name">Your name</label>
-                <input type="text" id="name" placeholder="Enter your name">
+                <input type="text" name="name" placeholder="Enter your name">
+                <br>
+                <label for="name">Father name</label>
+                <input type="text" name="fname" placeholder="Enter your father name">
                 <br>
                 <label for="email">Your email</label>
-                <input type="email" id="email" placeholder="Enter your email">
+                <input type="email" name="email" placeholder="Enter your email">
                 <br>
                 <label for="passw">Password</label>
-                <input type="password" id="passw" placeholder="Enter password">
-                <br><br> 
-                <hr>
-                <label>Gender</label>
+                <input type="password" name="password" placeholder="Enter password">
                 <br>
-                <input type="radio" name="gender"> Female
+                <label for="name">Your address</label>
+                <input type="text" name="address" placeholder="Enter your address">
                 <br>
-                <input type="radio" name="gender"> Male
-                <br>
-                <br>
-                <label>Types of computer you have</label>
-                <br>
-                <input type="checkbox" name="computerType"> Desktop
-                <br>
-                <input type="checkbox" naem="computerType"> Laptop
-                <br>
-                <br>
-                <label>Age group</label>
-                <select>
-                    <option>6 - 15</option>
-                    <option>15 - 25</option>
-                    <option>25 - 40</option>
-                    <option>40+</option>
-                </select>
-                <hr>                
-                <br>
-                <label>About yourself</label>
-                <br>
-                <textarea></textarea>
-                <br>
-                <br>
+                <label for="name">Your age</label>
+                <input type="text" name="age" placeholder="Enter your age">
+                <br><br>
                 <input type="submit" name="Save my info">
                 <input type="reset" name="Clear data">
             </fieldset>
