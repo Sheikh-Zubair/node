@@ -29,12 +29,12 @@ app.set('views', path.join(__dirname, 'views'));
 app.use(bodyparser.json());
 app.use(bodyparser.urlencoded({ extended: false }));
 // static path containing content for view
-//app.use(express.static(path.join(__dirname, 'Public')));
+app.use(express.static(path.join(__dirname, 'Public')));
 
-/*app.get('/', (req, res) => {
+app.get('/', (req, res) => {
     res.render('index');
-});*/
-app.get('/', (req, res)=> {
+});
+app.get('/s', (req, res)=> {
     res.render('form.ejs');
 });
 //post request
