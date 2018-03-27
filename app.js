@@ -3,7 +3,21 @@
 const http = require('http');
 const express = require('express');
 const bodyparser = require('body-parser');
+const mysql = require('mysql');
 const path = require('path'); // a buitin module 
+// For db connection
+const db = mysql.createConnection({
+    host: 'http://phpmyadmin-nodedb.193b.starter-ca-central-1.openshiftapps.com',
+    user: 'user',
+    pasword: 'pass',
+    database: 'userdata'
+});
+db.connect((err) => {
+    /* if (err) {
+         throw err;
+     }*/
+    console.log('MySQL Connected....');
+});
 const app = express(); 
 // port
 var port = process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT || 8080,
@@ -16,6 +30,22 @@ app.use(express.static(path.join(__dirname, 'Public')));
 
 app.get('/', (req, res) => {
     res.render('index');
+});
+//post request
+app.post('/users/add', (req, res)=> {
+     let newUser = {
+        Name: req.body.name,
+        Fname: req.body.fname,
+        Email: req.body.email,
+        Pass: req.body.password,
+        Address: req.body.address,
+        Age: req.body.age
+     }
+    let sql = 'INSERT INTO userdata SET ?';
+    let query = db.query(sql, newUser, (err, result) => {
+        if (err) throw err;
+        console.log('User added');
+    });
 });
 // listen to port 3000
 // the function/method below runs whenever someone trires to reach this system on port 3000
