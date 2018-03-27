@@ -22,6 +22,9 @@ const app = express();
 // port
 var port = process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT || 8080,
     ip   = process.env.IP   || process.env.OPENSHIFT_NODEJS_IP || '0.0.0.0';
+// view engine
+app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, 'views'));
 // Body parser middle where
 app.use(bodyparser.json());
 app.use(bodyparser.urlencoded({ extended: false }));
