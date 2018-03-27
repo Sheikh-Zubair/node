@@ -10,7 +10,7 @@ const db = mysql.createConnection({
     host: 'http://phpmyadmin-nodedb.193b.starter-ca-central-1.openshiftapps.com',
     user: 'user',
     pasword: 'pass',
-    database: 'userdata'
+    database: 'nodedb'
 });
 db.connect((err) => {
     /* if (err) {
