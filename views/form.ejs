@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="Style/style.css">
+</head>
+
+<body class="Forms">
+    <div class="forms">
+        <h1>Form</h1>
+        <form method='POST' action='/users/add'>
+            <fieldset class="field">
+                <legend>Profile info</legend>
+                <hr>
+                <label for="name">Your name</label>
+                <input type="text" name="name" placeholder="Enter your name">
+                <br>
+                <label for="name">Father name</label>
+                <input type="text" name="fname" placeholder="Enter your father name">
+                <br>
+                <label for="email">Your email</label>
+                <input type="email" name="email" placeholder="Enter your email">
+                <br>
+                <label for="passw">Password</label>
+                <input type="password" name="password" placeholder="Enter password">
+                <br>
+                <label for="name">Your address</label>
+                <input type="text" name="address" placeholder="Enter your address">
+                <br>
+                <label for="name">Your age</label>
+                <input type="text" name="age" placeholder="Enter your age">
+                <br><br>
+                <input type="submit" name="Save my info">
+                <input type="reset" name="Clear data">
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
