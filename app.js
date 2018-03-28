@@ -7,7 +7,7 @@ const mysql = require('mysql');
 const path = require('path'); // a buitin module 
 // For db connection
 const db = mysql.createConnection({
-    host: 'http://mysql-nodejs-server.193b.starter-ca-central-1.openshiftapps.com/node',
+    host: 'mysql://mysql:3306/',
     user: 'Zubair',
     pasword: '4789',
     database: 'expressdb'
