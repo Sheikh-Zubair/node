@@ -7,10 +7,10 @@ const mysql = require('mysql');
 const path = require('path'); // a buitin module 
 // For db connection
 const db = mysql.createConnection({
-    host: 'http://phpmyadmin-nodedb.193b.starter-ca-central-1.openshiftapps.com',
-    user: 'user',
-    pasword: 'pass',
-    database: 'nodedb'
+    host: 'http://mysql-nodejs-server.193b.starter-ca-central-1.openshiftapps.com/node',
+    user: 'Zubair',
+    pasword: '4789',
+    database: 'expressdb'
 });
 db.connect((err) => {
     /* if (err) {
