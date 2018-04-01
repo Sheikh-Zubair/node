@@ -7,10 +7,10 @@ const mysql = require('mysql');
 const path = require('path'); // a buitin module 
 // For db connection
 const db = mysql.createConnection({
-    host: 'mysql://mysql:3306/',
-    user: 'Zubair',
-    pasword: '4789',
-    database: 'expressdb'
+    host: 'sql11.freemysqlhosting.net',
+    user: 'sql11230033',
+    pasword: 'Ai1wD2UpY3',
+    database: 'sql11230033'
 });
 db.connect((err) => {
     /* if (err) {
@@ -53,7 +53,7 @@ app.post('/users/add', (req, res)=> {
         console.log('User added');
     });
 });
-// listen to port 3000
+// listen to port 
 // the function/method below runs whenever someone trires to reach this system on port 3000
 app.listen(port,ip);
 module.exports = app ;
