@@ -2,10 +2,10 @@
   "name": "server",
   "version": "1.0.0",
   "description": "This is a server cereated using vanilla JavaScript",
-  "main": "server.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
+    "start": "nodemon"
   },
   "author": "Sheikh Zubair",
   "license": "ISC",
